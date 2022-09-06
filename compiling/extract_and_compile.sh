@@ -1,17 +1,17 @@
 # !/bin/bash
 
 # Take an argument
-primeIndex = "$argument"
+arguIndex="$1"
 
 # Extract the NthPrime.tgz
-tar zxvf NthPrime.tgz
+tar zxf NthPrime.tgz
 
 # Go to directory: NthPrime
 cd ./NthPrime || exit
 
 # Compiles the .c files
-gcc -o NthPrime *.c #Compiles 
+gcc -o NthPrime *.c 
 
 # Run the C Program
-./NthPrime "$primeIndex"
+./NthPrime "$arguIndex"
 
