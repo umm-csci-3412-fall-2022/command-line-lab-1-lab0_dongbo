@@ -1,12 +1,17 @@
 # !/bin/bash
 
-echo -n "Please Enter an argument:" #Hits for take an argument
-read $argument #Take an argument
+# Take an argument
+primeIndex = "$argument"
 
-tar zxvf NthPrime.tgz #Extract the .tgz
-cd ./NthPrime  #Go to directory: NthPrime.tgz
+# Extract the NthPrime.tgz
+tar zxvf NthPrime.tgz
 
+# Go to directory: NthPrime
+cd ./NthPrime
+
+# Compiles the .c files
 gcc -o NthPrime *.c #Compiles 
 
-./NthPrime $argument
+# Run the C Program
+./NthPrime "$primeIndex"
 
