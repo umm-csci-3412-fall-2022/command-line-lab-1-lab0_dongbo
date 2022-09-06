@@ -7,7 +7,7 @@ primeIndex = "$argument"
 tar zxvf NthPrime.tgz
 
 # Go to directory: NthPrime
-cd ./NthPrime
+cd ./NthPrime || exit
 
 # Compiles the .c files
 gcc -o NthPrime *.c #Compiles 
